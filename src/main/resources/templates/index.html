@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <meta name="keywords" content="关键词,5个左右,单个8汉字以内">
+    <meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="${request.contextPath}/static/lib/html5.js"></script>
+    <script type="text/javascript" src="${request.contextPath}/static/lib/respond.min.js"></script>
+    <![endif]-->
+    <link href="${request.contextPath}/static/h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="${request.contextPath}/static/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+    <link href="${request.contextPath}/static/css/index.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="${request.contextPath}/static/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('.pngfix,.icon');</script>
+    <![endif]-->
+</head>
+<body>
+<header class="navbar-wrapper">
+    <div class="navbar navbar-black">
+        <div class="container cl">
+            <a class="logo navbar-logo f-l mr-10 hidden-xs" href="${request.contextPath}/index/main">标题，点击回到首页</a>
+            <span class="logo navbar-slogan f-l mr-10 hidden-xs">介绍 &middot; 介绍 &middot; 介绍</span>
+            <nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
+                <ul class="cl">
+                    <li class="current"><a href="${request.contextPath}/index/about">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">一级导航 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <ul class="dropDown-menu menu radius box-shadow">
+                            <li><a href="#">二级导航</a></li>
+                            <li><a href="#">二级导航<i class="arrow Hui-iconfont">&#xe6d7;</i></a>
+                                <ul class="menu">
+                                    <li><a href="javascript:;">三级菜单<i class="arrow Hui-iconfont">&#xe6d7;</i></a>
+                                        <ul class="menu">
+                                            <li><a href="javascript:;">四级菜单</a></li>
+                                            <li><a href="javascript:;">四级菜单</a></li>
+                                            <li><a href="javascript:;">四级菜单</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">三级导航</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">二级导航</a></li>
+                            <li class="disabled"><a href="javascript:;">二级菜单</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-userbar hidden-xs">
+
+            </nav>
+        </div>
+    </div>
+</header>
+<div>
+    <div id="slider-3">
+        <div class="slider">
+            <div class="bd">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="${request.contextPath}/static/image/013d5b56fe13946ac725794803ca4e.jpg" ></a></li>
+                    <li><a href="#" target="_blank"><img src="${request.contextPath}/static/image/f9c182d590b693cbd2c.jpg" ></a></li>
+                    <li><a href="#" target="_blank"><img src="${request.contextPath}/static/image/013d5b56fe13946ac725794803ca4e.jpg" ></a></li>
+                    <li><a href="#" target="_blank"><img src="${request.contextPath}/static/image/f9c182d590b693cbd2c.jpg" ></a></li>
+                </ul>
+            </div>
+            <ol class="hd cl dots">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-20">
+    <div class="container-fluid">
+        <nav> <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> <a href="#" target="_blank">法律声明</a> </nav>
+        <p>Copyright &copy;2016 H-ui.net All Rights Reserved. <br>
+            <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src="${request.contextPath}/static/lib/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="${request.contextPath}/static/h-ui/js/h-ui.js"></script>
+<script type="text/javascript" src="${request.contextPath}/static/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js"></script>
+
+<script>
+    $(function(){
+        jQuery("#slider-3 .slider").slide({
+            mainCell:".bd ul",
+            titCell:".hd li",
+            trigger:"click",
+            effect:"leftLoop",
+            autoPlay:true,
+            delayTime:700,
+            interTime:7000,
+            pnLoop:false,
+            titOnClassName:"active"
+        })
+    });
+
+</script>
+</body>
+</html>

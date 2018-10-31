@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zym.dao.UserMapper">
+
+    <resultMap  id="userMap" type="cn.zym.po.UserInfo">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+    </resultMap>
+
+    <select id="login" resultMap="userMap" parameterType="cn.zym.vo.UserVo">
+        select a.id,a.username,a.password
+        where a.username=#{username}
+        <if test="id!=null">
+            and a.id!=#{id}
+        </if>
+    </select>
+
+</mapper>
